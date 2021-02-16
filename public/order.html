@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="this is a food market app" />
+    <meta name="author" content="Hafizh Maulana Y" />
+
+    <title>Sienta Resto</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-food fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a href="" class="navbar-brand">
+          <img src="/images/Logo.svg" class="w-100" alt="logo-food-market" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link">All product</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-login d-block btn-block d-lg-none px-4 py-2"
+                href="#"
+                >Masuk</a
+              >
+              <a class="btn btn-login d-none d-lg-block px-4 py-2" href="#"
+                >Masuk</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <div class="page-content page-order">
+      <section class="categories" id="categories">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h5>All Categories</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-6 col-md-2"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
+              <a href="" class="card card-category">
+                <div class="card-body">
+                  <div class="icon-category">
+                    <img src="/images/burger.svg" class="w-100" alt="" />
+                  </div>
+                  <div class="title-text">Hamburgers</div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-2"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              <a href="" class="card card-category">
+                <div class="card-body">
+                  <div class="icon-category">
+                    <img src="/images/pizza.svg" class="w-100" alt="" />
+                  </div>
+                  <div class="title-text">Pizza's</div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-2"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <a href="" class="card card-category">
+                <div class="card-body">
+                  <div class="icon-category">
+                    <img src="/images/potato.svg" class="w-100" alt="" />
+                  </div>
+                  <div class="title-text">Potato's</div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-2"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
+              <a href="" class="card card-category">
+                <div class="card-body">
+                  <div class="icon-category">
+                    <img src="/images/drink.svg" class="w-100" alt="" />
+                  </div>
+                  <div class="title-text">Drinks</div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-2"
+              data-aos="fade-down"
+              data-aos-delay="500"
+            >
+              <a href="" class="card card-category">
+                <div class="card-body">
+                  <div class="icon-category">
+                    <img src="/images/sandwich.svg" class="w-100" alt="" />
+                  </div>
+                  <div class="title-text">Sandwich</div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-md-2"
+              data-aos="fade-down"
+              data-aos-delay="600"
+            >
+              <a href="" class="card card-category">
+                <div class="card-body">
+                  <div class="icon-category">
+                    <img src="/images/noodles.svg" class="w-100" alt="" />
+                  </div>
+                  <div class="title-text">Noodles</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="favorite product mt-5" id="favorite">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h5>All Products</h5>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="600"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="800"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="1200"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="1400"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="1600"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-6 col-md-3"
+              data-aos="fade-down"
+              data-aos-delay="1800"
+            >
+              <div class="product-food card">
+                <div class="card-body">
+                  <div class="food-thumbnail">
+                    <img
+                      src="/images/img-food.png"
+                      class="img-food w-100"
+                      alt=""
+                    />
+                  </div>
+                  <div class="food-description">
+                    <div class="row justify-content-around">
+                      <div class="col-6">
+                        <div class="detail-food">
+                          <div class="title-food">Daging Steak</div>
+                          <div class="price-food">IDR 120.000</div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="category-food">
+                          <img
+                            src="/images/category-daging.svg"
+                            class="w-100"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="row text-center">
+        <div class="col-12">
+          <p>&copy; Copyright 2020 By SientaResto</p>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/script/scroll.js"></script>
+  </body>
+</html>

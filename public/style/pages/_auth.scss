@@ -1,0 +1,68 @@
+.page-login {
+  display: flex;
+  justify-content: space-between;
+
+  .form-login {
+    width: 55%;
+    padding-top: 30px;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    .header-login {
+      h5 {
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+
+    .btn-login {
+      color: white;
+      background-color: #ff633a;
+
+      &:hover {
+        background-color: #ff4719;
+      }
+    }
+
+    .btn-back {
+      &:hover {
+        border: 1px solid black;
+      }
+    }
+  }
+
+  .ilustrasi {
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(
+      89.1deg,
+      #ff633a -6.09%,
+      rgba(255, 115, 79, 0.72) 105.54%
+    );
+    width: 45%;
+
+    .thumbnail-ilustrasi {
+      width: 100%;
+      height: 380px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .description-login {
+      color: white;
+
+      .title-text {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

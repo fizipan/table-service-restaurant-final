@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="this is a food market app" />
+    <meta name="author" content="Hafizh Maulana Y" />
+
+    <title>Dashboard</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page-dashboard">
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!-- sidebar -->
+        <div class="border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading text-center">
+            <img src="/images/Logo.svg" alt="" class="my-4" />
+          </div>
+          <div class="list-group list-group-flush">
+            <a
+              href="/dashboard.html"
+              class="list-group-item list-group-item-action active"
+            >
+              Dashboard
+            </a>
+            <a
+              href="/dashboard-products.html"
+              class="list-group-item list-group-item-action"
+            >
+              All Menu
+            </a>
+            <a
+              href="/dashboard-transactions.html"
+              class="list-group-item list-group-item-action"
+            >
+              Order
+            </a>
+            <a
+              href="/dashboard-account.html"
+              class="list-group-item list-group-item-action"
+            >
+              Transactions
+            </a>
+            <a
+              href="/dashboard-account.html"
+              class="list-group-item list-group-item-action"
+            >
+              Data Meja
+            </a>
+            <a
+              href="/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              Sign Out
+            </a>
+          </div>
+        </div>
+
+        <!-- page content -->
+        <div id="page-content-wrapper">
+          <nav
+            class="navbar navbar-expand-lg navbar-light navbar-food fixed-top"
+            data-aos="fade-down"
+          >
+            <div class="container-fluid">
+              <button
+                class="btn btn-secondary d-md-none mr-auto mr-2"
+                id="menu-toggle"
+              >
+                &laquo; Menu
+              </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarResponsive"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collpase navbar-collapse" id="navbarResponsive">
+                <!-- dekstop menu -->
+                <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      <img
+                        src="/images/user_pc.png"
+                        alt="profile"
+                        class="rounded-circle mr-2 profile-picture"
+                      />
+                      Hi, Hafizh
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="/" class="dropdown-item">logout</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link d-inline-bloc mt-2">
+                      <img src="/images/cart.svg" alt="cart-empty" />
+                      <div class="cart-badge">7</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- mobile app -->
+                <ul class="navbar-nav d-block d-lg-none">
+                  <li class="nav-item">
+                    <a href="" class="nav-link"> Hi, Hafizh </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link d-inline-block"> Cart </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="section-content section-dashboard-home"
+            data-aos="fade-up"
+          >
+            <div class="container-fluid">
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Dashboard</h2>
+                <p class="dashboard-subtitle">Look what you have made today!</p>
+              </div>
+              <div class="dashboard-content">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Menu</div>
+                        <div class="dashboard-card-subtitle">20 Menu</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Order</div>
+                        <div class="dashboard-card-subtitle">10 Order</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Waiter</div>
+                        <div class="dashboard-card-subtitle">4 Waiter</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-12 mt-2">
+                    <h5 class="mb-3">Recent Order</h5>
+                    <a
+                      href="/dashboard-transactions-details.html"
+                      class="card card-list d-block"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img
+                              src="/images/img-food.png"
+                              class="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-4">Daging Steak</div>
+                          <div class="col-md-3">Hafizh</div>
+                          <div class="col-md-3">14, Januari 2020</div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img src="/images/icon-row.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/dashboard-transactions-details.html"
+                      class="card card-list d-block"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img
+                              src="/images/img-food.png"
+                              class="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-4">Lebrone X</div>
+                          <div class="col-md-3">Masayashi</div>
+                          <div class="col-md-3">11 Januari, 2020</div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img src="/images/icon-row.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/dashboard-transactions-details.html"
+                      class="card card-list d-block"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img
+                              src="/images/img-food.png"
+                              class="w-100"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-4">Soffa Lembutte</div>
+                          <div class="col-md-3">Shayna</div>
+                          <div class="col-md-3">10 Januari, 2020</div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img src="/images/icon-row.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>

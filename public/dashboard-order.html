@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="this is a food market app" />
+    <meta name="author" content="Hafizh Maulana Y" />
+
+    <title>Dashboard</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page-dashboard">
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!-- sidebar -->
+        <div class="border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading text-center">
+            <img src="/images/Logo.svg" alt="" class="my-4" />
+          </div>
+          <div class="list-group list-group-flush">
+            <a
+              href="/dashboard.html"
+              class="list-group-item list-group-item-action"
+            >
+              Dashboard
+            </a>
+            <a
+              href="/dashboard-products.html"
+              class="list-group-item list-group-item-action"
+            >
+              All Menu
+            </a>
+            <a
+              href="/dashboard-transactions.html"
+              class="list-group-item list-group-item-action active"
+            >
+              Order
+            </a>
+            <a
+              href="/dashboard-account.html"
+              class="list-group-item list-group-item-action"
+            >
+              Transactions
+            </a>
+            <a
+              href="/dashboard-account.html"
+              class="list-group-item list-group-item-action"
+            >
+              Data Meja
+            </a>
+            <a
+              href="/index.html"
+              class="list-group-item list-group-item-action"
+            >
+              Sign Out
+            </a>
+          </div>
+        </div>
+
+        <!-- page content -->
+        <div id="page-content-wrapper">
+          <nav
+            class="navbar navbar-expand-lg navbar-light navbar-food fixed-top"
+            data-aos="fade-down"
+          >
+            <div class="container-fluid">
+              <button
+                class="btn btn-secondary d-md-none mr-auto mr-2"
+                id="menu-toggle"
+              >
+                &laquo; Menu
+              </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarResponsive"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collpase navbar-collapse" id="navbarResponsive">
+                <!-- dekstop menu -->
+                <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      <img
+                        src="/images/user_pc.png"
+                        alt="profile"
+                        class="rounded-circle mr-2 profile-picture"
+                      />
+                      Hi, Hafizh
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="/" class="dropdown-item">logout</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link d-inline-bloc mt-2">
+                      <img src="/images/cart.svg" alt="cart-empty" />
+                      <div class="cart-badge">7</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- mobile app -->
+                <ul class="navbar-nav d-block d-lg-none">
+                  <li class="nav-item">
+                    <a href="" class="nav-link"> Hi, Hafizh </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link d-inline-block"> Cart </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="section-content section-dashboard-home"
+            data-aos="fade-up"
+          >
+            <div class="container-fluid">
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Orders</h2>
+                <p class="dashboard-subtitle">
+                  Big result start from the small one
+                </p>
+              </div>
+              <div class="dashboard-content">
+                <div class="row">
+                  <div class="col-12 mt-2">
+                    <ul
+                      class="nav nav-pills mb-3"
+                      id="pills-tab"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link active"
+                          id="pills-home-tab"
+                          data-toggle="pill"
+                          href="#pills-home"
+                          role="tab"
+                          aria-controls="pills-home"
+                          aria-selected="true"
+                          >Order Product</a
+                        >
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link"
+                          id="pills-profile-tab"
+                          data-toggle="pill"
+                          href="#pills-profile"
+                          role="tab"
+                          aria-controls="pills-profile"
+                          aria-selected="false"
+                          >Checkout Product</a
+                        >
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="pills-home"
+                        role="tabpanel"
+                        aria-labelledby="pills-home-tab"
+                      >
+                        <div class="card card-list d-block">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-1">
+                                <img
+                                  src="/images/img-food.png"
+                                  class="w-100"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-3">Shirup Marzan</div>
+                              <div class="col-md-2">
+                                <img
+                                  src="/images/category-daging.svg"
+                                  class="w-50"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">IDR 120.000</div>
+                              <div class="col-md-2">Ada</div>
+                              <div class="col-md-2 d-none d-md-block">
+                                <button
+                                  type="submit"
+                                  class="btn btn-success px-4"
+                                >
+                                  Pesan
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-list d-block">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-1">
+                                <img
+                                  src="/images/img-food.png"
+                                  class="w-100"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-3">Shirup Marzan</div>
+                              <div class="col-md-2">
+                                <img
+                                  src="/images/category-daging.svg"
+                                  class="w-50"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">IDR 120.000</div>
+                              <div class="col-md-2">Ada</div>
+                              <div class="col-md-2 d-none d-md-block">
+                                <button
+                                  type="submit"
+                                  class="btn btn-success px-4"
+                                >
+                                  Pesan
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-list d-block">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-1">
+                                <img
+                                  src="/images/img-food.png"
+                                  class="w-100"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-3">Shirup Marzan</div>
+                              <div class="col-md-2">
+                                <img
+                                  src="/images/category-daging.svg"
+                                  class="w-50"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">IDR 120.000</div>
+                              <div class="col-md-2">Ada</div>
+                              <div class="col-md-2 d-none d-md-block">
+                                <button
+                                  type="submit"
+                                  class="btn btn-success px-4"
+                                >
+                                  Pesan
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade overflow-auto"
+                        style="height: 100%"
+                        id="pills-profile"
+                        role="tabpanel"
+                        aria-labelledby="pills-profile-tab"
+                      >
+                        <section class="cart-product" id="cart-product">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="table-responsive">
+                                  <table
+                                    class="table table-borderless table-cart overflow-auto"
+                                  >
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Name Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Menu</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td style="width: 20%">
+                                          <img
+                                            src="/images/product-cart.png"
+                                            style="max-height: 90px"
+                                            alt=""
+                                          />
+                                        </td>
+                                        <td style="width: 35%">
+                                          <div class="title-text">
+                                            Daging Steak Enak
+                                          </div>
+                                          <div class="icon-category mt-2">
+                                            <img
+                                              src="/images/category-daging.svg"
+                                              alt=""
+                                            />
+                                          </div>
+                                        </td>
+                                        <td style="width: 25%">
+                                          <div class="price-product">
+                                            IDR 120.000
+                                          </div>
+                                        </td>
+
+                                        <td style="width: 20%">
+                                          <button
+                                            type="button"
+                                            class="btn btn-remove"
+                                          >
+                                            Remove
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="width: 20%">
+                                          <img
+                                            src="/images/product-cart.png"
+                                            style="max-height: 90px"
+                                            alt=""
+                                          />
+                                        </td>
+                                        <td style="width: 35%">
+                                          <div class="title-text">
+                                            Daging Steak Enak
+                                          </div>
+                                          <div class="icon-category mt-2">
+                                            <img
+                                              src="/images/category-daging.svg"
+                                              alt=""
+                                            />
+                                          </div>
+                                        </td>
+                                        <td style="width: 25%">
+                                          <div class="price-product">
+                                            IDR 120.000
+                                          </div>
+                                        </td>
+
+                                        <td style="width: 20%">
+                                          <button
+                                            type="button"
+                                            class="btn btn-remove"
+                                          >
+                                            Remove
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="width: 20%">
+                                          <img
+                                            src="/images/product-cart.png"
+                                            style="max-height: 90px"
+                                            alt=""
+                                          />
+                                        </td>
+                                        <td style="width: 35%">
+                                          <div class="title-text">
+                                            Daging Steak Enak
+                                          </div>
+                                          <div class="icon-category mt-2">
+                                            <img
+                                              src="/images/category-daging.svg"
+                                              alt=""
+                                            />
+                                          </div>
+                                        </td>
+                                        <td style="width: 25%">
+                                          <div class="price-product">
+                                            IDR 120.000
+                                          </div>
+                                        </td>
+
+                                        <td style="width: 20%">
+                                          <button
+                                            type="button"
+                                            class="btn btn-remove"
+                                          >
+                                            Remove
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section class="data-user mt-2" id="data-user">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-12 mb-2">
+                                <h5>Data User</h5>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="nama">Nama Pelanggan</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    name="nama"
+                                    id="nama"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="numberHp">No. HP</label>
+                                  <input
+                                    type="number"
+                                    name="numberHp"
+                                    id="numberHp"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label>Jenis Kelamin</label>
+                                  <br />
+                                  <div
+                                    class="custom-control custom-radio custom-control-inline"
+                                  >
+                                    <input
+                                      type="radio"
+                                      id="laki-laki"
+                                      name="jk"
+                                      class="custom-control-input"
+                                      checked
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="laki-laki"
+                                      >Laki - Laki</label
+                                    >
+                                  </div>
+                                  <div
+                                    class="custom-control custom-radio custom-control-inline"
+                                  >
+                                    <input
+                                      type="radio"
+                                      id="perempuan"
+                                      name="jk"
+                                      class="custom-control-input"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="perempuan"
+                                      >Perempuan</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label for="address">Alamat</label>
+                                  <textarea
+                                    name="alamat"
+                                    id="alamat"
+                                    class="form-control"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between mt-4">
+                              <div class="col-md-4">
+                                <div class="card input-meja mb-4">
+                                  <div class="card-header">
+                                    <p>input meja</p>
+                                  </div>
+                                  <div class="card-body">
+                                    <div class="form-group">
+                                      <label for="numberTable"
+                                        >Number Table</label
+                                      >
+                                      <input
+                                        type="number"
+                                        name="numberTable"
+                                        class="form-control"
+                                        id="numberTable"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-7">
+                                <div class="card">
+                                  <div class="card-header">Data Meja</div>
+                                  <div
+                                    class="card-body d-flex flex-wrap justify-content-center"
+                                  >
+                                    <div class="data-meja">1</div>
+                                    <div class="data-meja">2</div>
+                                    <div class="data-meja">3</div>
+                                    <div class="data-meja">4</div>
+                                    <div class="data-meja">5</div>
+                                    <div class="data-meja">6</div>
+                                    <div class="data-meja">7</div>
+                                    <div class="data-meja">8</div>
+                                    <div class="data-meja">9</div>
+                                    <div class="data-meja">10</div>
+                                    <div class="data-meja">11</div>
+                                    <div class="data-meja">12</div>
+                                    <div class="data-meja">13</div>
+                                    <div class="data-meja">14</div>
+                                    <div class="data-meja">15</div>
+                                    <div class="data-meja">16</div>
+                                    <div class="data-meja">17</div>
+                                    <div class="data-meja">18</div>
+                                    <div class="data-meja">19</div>
+                                    <div class="data-meja">20</div>
+                                    <div class="data-meja">21</div>
+                                    <div class="data-meja">22</div>
+                                    <div class="data-meja">23</div>
+                                    <div class="data-meja">24</div>
+                                    <div class="data-meja">25</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section class="payment mt-4 mb-5" id="payment">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-12">
+                                <h5>Payment Information</h5>
+                              </div>
+                            </div>
+                            <div class="row mt-3 justify-content-between">
+                              <div class="col-md-3">
+                                <div class="count font-weight-bold">No 4</div>
+                                <div class="text-muted">Meja</div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="count font-weight-bold">
+                                  4 Product
+                                </div>
+                                <div class="text-muted">Jumlah product</div>
+                              </div>
+                              <div class="col-md-3">
+                                <div
+                                  class="count font-weight-bold text-success"
+                                >
+                                  IDR 20.000.000
+                                </div>
+                                <div class="text-muted">Total</div>
+                              </div>
+                              <div class="col-md-3">
+                                <button
+                                  type="submit"
+                                  class="btn btn-success px-4 py-2"
+                                >
+                                  Checkout Now
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>

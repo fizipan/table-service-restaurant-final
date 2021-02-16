@@ -1,0 +1,45 @@
+.product {
+  .product-food {
+    margin-bottom: 40px;
+    border: none;
+
+    .card-body {
+      padding: 0;
+      .food-thumbnail {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+
+        .img-food {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .food-description {
+        .title-food {
+          font-weight: 500;
+        }
+
+        .price-food {
+          font-weight: normal;
+          color: #ff633a;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .pesan-button {
+      .btn-order {
+        background-color: #ff633a;
+        color: white;
+
+        &:hover {
+          background-color: #ec2f00;
+        }
+      }
+    }
+  }
+}
